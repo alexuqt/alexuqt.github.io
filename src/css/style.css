@@ -3,23 +3,18 @@
 @import url('https://fonts.googleapis.com/css?family=Zilla Slab&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
-:root, html[data-theme='bw'] {
+:root {
   --title: 'Zilla Slab';
   --title: 'Lora';
   --text: 'Lato';
-  
+
   --primary: #7aa155;
-  --secondary: #f2f3f4 ;
-  --accent: #7d55a1;
-  --text-white: var(--secondary);
-  --text-black: #202020;
-
-}
-
-html[data-theme='g'] {
-  --primary: #6E875F;
   --secondary: #fff;
-  --accent: #875F87;
+  --accent: #7d55a1;
+  
+  --text-white: var(--secondary);
+  --text-black: #222222;
+  --text-gray: #717171;
 }
 
 /* inclou tot: header, primary & footer */
