@@ -14,6 +14,8 @@
   --text-white: var(--secondary);
   --text-black: #222222;
   --text-gray: #717171;
+
+  --pad-w: 120px;
 }
 
 /* inclou tot: header, primary & footer */
@@ -44,7 +46,7 @@ footer {
   height: 100px;
   display: grid;
   grid-template-columns: repeat(12,minmax(0,1fr));
-  padding: 0 120px;
+  padding: 0 var(--pad-w);
   column-gap: 24px;
 }
 
@@ -82,7 +84,7 @@ article {
 }
 
 .subhead {
-  font-size: 1.5em;
+  font-size: 2.5em;
 }
 
 h1, h2, h3 {
@@ -90,3 +92,34 @@ h1, h2, h3 {
   color: var(--primary);
 }
 
+a {
+  text-decoration: none;
+}
+
+a:not(.alex):hover {
+  text-decoration: underline;
+}
+
+a:not(.alex):visited {
+  color: var(--primary);
+}
+
+ol {
+  list-style: none;
+  counter-reset: item;
+}
+
+ol > li {
+  counter-increment: item;
+  margin-bottom: 5px;
+}
+
+ol > li:before {
+  margin-right: 10px;
+  content: counter(item);
+  border: 2px solid var(--primary);
+  border-radius: 100%;
+  width: 1.2em;
+  text-align: center;
+  display: inline-block;
+}

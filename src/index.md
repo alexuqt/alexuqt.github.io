@@ -22,3 +22,10 @@ a
   <li><a href="{{post.url}}">{{post.data.title}}</a></li>
 </ul>
 {%- endfor %}
+
+I like:
+
+<ol>
+  <li>Reading</li>
+  <li>Language learning</li>
+</ol>

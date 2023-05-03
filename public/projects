@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>About</title>
+  <title>Projects</title>
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="/css/navbar.css">
   <link rel="stylesheet" href="/css/" />
@@ -21,10 +21,10 @@
   </header>
   <main>
     <div class="main">
-      <h1>About</h1>
+      <h1>Projects</h1>
       <article>
         
-<p>About page</p>
+<p>Projects page</p>
 
 
 

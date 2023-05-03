@@ -1,6 +1,6 @@
 nav {
   display: flex;
-  padding: 32px 120px;
+  padding: 32px var(--pad-w);
   text-align: center;
   justify-content: space-between;
   align-items: center;
@@ -17,6 +17,7 @@ nav a {
   margin: 0 5px;
 }
 nav a:not(.alex):hover {
+  text-decoration: none;
   padding: 2px 9px;
   border: solid 1px var(--primary);
   border-radius: 4px;
