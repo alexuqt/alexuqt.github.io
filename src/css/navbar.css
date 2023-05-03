@@ -1,14 +1,15 @@
 nav {
   display: flex;
-  padding: 20px 120px;
+  padding: 32px 120px;
   text-align: center;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2); /*not sure*/
 }
 
 nav a {
+  color: var(--primary);
   display: block;
-  color: var(--c1);
   text-align: center;
   text-decoration: none;
   padding: 3px 10px;
@@ -17,17 +18,10 @@ nav a {
 }
 nav a:not(.alex):hover {
   padding: 2px 9px;
-  border: solid 1px var(--text-white);
+  border: solid 1px var(--primary);
   border-radius: 4px;
-  animation: 0.4s multicolor;
-}
-@keyframes multicolor {
-  33% {
-    color: var(--accent);
-  }
-  100% {
-    color: var(--text-white);
-  }
+  color: var(--accent);
+  transition: color 0.4s;
 }
 
 nav ul {
@@ -35,19 +29,18 @@ nav ul {
   margin: 0;
   padding: 0;
   text-align: center;
-  background-color: var(--c5);
   padding-bottom: 5px;
 }
 
 nav li {
   text-decoration: none;
-  color: var(--c1);
   display: inline-block;
   margin: 0;
 }
 
 .alex {
   font-weight: 700;
-  font-size: 1.5em;
+  font-size: 1.6em;
   font-family: var(--title);
+  color: var(--text-black);
 }

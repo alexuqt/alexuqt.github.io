@@ -1,25 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Lora&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Zilla Slab&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
-:root, html[data-theme='bw'] {
+:root {
   --title: 'Zilla Slab';
   --title: 'Lora';
   --text: 'Lato';
-  
+
   --primary: #7aa155;
-  --secondary: #f2f3f4 ;
-  --accent: #7d55a1;
-  --text-white: var(--secondary);
-  --text-black: #202020;
-
-}
-
-html[data-theme='g'] {
-  --primary: #6E875F;
   --secondary: #fff;
-  --accent: #875F87;
+  --accent: #7d55a1;
+  
+  --text-white: var(--secondary);
+  --text-black: #222222;
+  --text-gray: #717171;
 }
 
 /* inclou tot: header, primary & footer */
@@ -27,7 +21,6 @@ body {
   font-family: var(--text), 'Roboto', 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
   background-color: var(--secondary);
   margin: 0 auto;
-  text-align: center;
   
   min-height: 100vh;
   display: flex;
@@ -36,12 +29,10 @@ body {
 
 header {
   width: 100%;
-  background-color: var(--primary);
-  color: var(--text-white);
   z-index: 99;
 }
 
-primary {
+main {
   width: 100%;
   margin: 0 auto;
 }
@@ -74,12 +65,28 @@ grid-column: span 4/span 4;
 
 article {
   text-align: left;
-  margin: 0 20%;
   text-align: justify;
   text-justify: inter-word;
   padding-bottom: 50px;
+  
+}
+
+.main {
+  padding: 0 20%;
+  padding-top: 20px;
+}
+
+::selection {
+  color: var(--secondary);
+  background: var(--accent);
+}
+
+.subhead {
+  font-size: 1.5em;
 }
 
 h1, h2, h3 {
   font-family: var(--title);
+  color: var(--primary);
 }
+
