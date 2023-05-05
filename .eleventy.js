@@ -5,6 +5,8 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy('./src/projects/images');
 
+  eleventyConfig.addFilter("sortByDate", (projects) => projects.sort((a, b) => a.data.date < b.data.date ? 1 : -1));
+
   return {
     dir: {
       input: 'src',

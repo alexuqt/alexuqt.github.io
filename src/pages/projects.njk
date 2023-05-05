@@ -5,10 +5,11 @@ permalink: /projects.html
 
 <header>
   <p>Projects page</p>
+  {{ collections.projects | length }}
 </header>
 
 <section class="projects">
-{% for project in collections.projects | reverse %}
+{% for project in collections.projects | sortByDate %}
 <a href="{{project.url}}" class="project">
   <header class="project-header">
   <img class="project-image" src="/projects/images/{{project.data.img}}" alt="{{project.data.title}}" />
