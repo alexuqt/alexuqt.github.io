@@ -61,8 +61,8 @@ header button {
 }
 
 footer div {
-flex-direction: column;
-grid-column: span 4/span 4;
+  flex-direction: column;
+  grid-column: span 4/span 4;
 }
 
 article {
@@ -74,7 +74,7 @@ article {
 }
 
 .main {
-  padding: 0 20%;
+  padding: 0 var(--pad-w);
   padding-top: 20px;
 }
 
@@ -87,6 +87,10 @@ article {
   font-size: 2.5em;
 }
 
+p {
+  margin: 0;
+}
+
 h1, h2, h3 {
   font-family: var(--title);
   color: var(--primary);
@@ -96,12 +100,29 @@ a {
   text-decoration: none;
 }
 
-a:not(.alex):hover {
-  text-decoration: underline;
+a:hover {
+  text-decoration: none;
 }
 
-a:not(.alex):visited {
+a:not(.alex):not(.project):not(.nav-a):visited {
   color: var(--primary);
+}
+
+.left2right { 
+  display: inline-block;
+  padding-bottom: 2px;
+  background-image: linear-gradient(var(--primary) 0 0);
+  background-position: 0 100%; /*OR bottom left*/
+  background-size: 0% 2px;
+  background-repeat: no-repeat;
+  transition:
+    background-size 0.3s,
+    background-position 0s 0.3s; /*change after the size immediately*/
+}
+
+.left2right:hover { 
+  background-position: 100% 100%; /*OR bottom right*/
+  background-size: 100% 2px;
 }
 
 ol {
@@ -122,4 +143,12 @@ ol > li:before {
   width: 1.2em;
   text-align: center;
   display: inline-block;
+}
+
+img {
+  vertical-align: middle;
+  border: 0;
+  max-width: 100%;
+  height: auto;
+  width: auto;
 }

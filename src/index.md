@@ -12,14 +12,13 @@ Hello! Welcome to demo upsi
 
 <h2>{{ snippet.data.title }}</h2>
 <p>{{ snippet.data.description }}</p>
+{{ snippet.content }}
 {% endfor %}
-
-a
 
 {% for post in collections.posts %}
 
 <ul>
-  <li><a href="{{post.url}}">{{post.data.title}}</a></li>
+  <li><a href="{{post.url}}" class="left2right">{{post.data.title}}</a></li>
 </ul>
 {%- endfor %}
 
