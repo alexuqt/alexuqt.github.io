@@ -26,10 +26,6 @@
   padding: 0;
 }
 
-.portfolio-elements {
-  
-}
-
 .line-below {
   border-bottom: 0.3vw solid var(--text-white);
 }
@@ -50,7 +46,7 @@
   display: inline-block;
   background-color: var(--text-white);
   height: 0.2vw;
-  width: 30vw;
+  width: 23vw;
   margin-top: 1.1vw;
 }
 
