@@ -1,15 +1,23 @@
-@media only screen and (max-width: 1024px) { /* iPad */
+@media only screen and (max-width: 1280px) { /* iPad */
   .projects {
     grid-template-columns: repeat(3,minmax(0,1fr));
   }
+
+  :root {
+    --pad-w: 70px;
+  }  
 }
 
-@media only screen and (max-width: 812px) { /* iPhone */
+@media only screen and (max-width: 640px) { /* iPhone */
   nav {
     display: inline-block;
   }
 
   .projects {
     grid-template-columns: repeat(2,minmax(0,1fr));
+  }
+
+  body {
+    font-size: 1.5em;
   }
 }
