@@ -89,6 +89,7 @@ article {
 
 p {
   margin: 0;
+  word-wrap: break-word;
 }
 
 h1, h2, h3 {
