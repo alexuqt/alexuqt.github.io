@@ -1,27 +1,32 @@
 nav {
   display: flex;
-  padding: 32px var(--pad-w);
+  padding: 8px 0;
+  margin: 0 var(--pad-w);
   text-align: center;
   justify-content: space-between;
   align-items: center;
-  /*box-shadow: 0 2px 4px 0 rgba(0,0,0,.2); /*not sure*/
+  border-bottom: 1px solid var(--black-25);
 }
 
 nav a {
-  color: var(--primary);
+  color: var(--text-black);
   display: block;
   text-align: center;
   text-decoration: none;
-  padding: 3px 10px;
-  font-size: 1.2rem;
-  margin: 0 5px;
+  font-size: var(--ts);
+}
+nav a:not(.alex) {
+  margin-left: 64px;
+}
+nav a.alex {
+  margin-right: 64px;
 }
 nav a:not(.alex):hover {
   text-decoration: none;
   /*padding: 2px 9px;
   border: solid 1px var(--primary);
   border-radius: 4px;*/
-  color: var(--accent);
+  color: var(--primary);
   transition: color 0.4s;
 }
 
@@ -41,7 +46,7 @@ nav li {
 
 .alex {
   font-weight: 700;
-  font-size: 1.6em;
-  font-family: var(--title);
+  font-size: var(--ts1);
+  /*font-family: var(--alex-font);*/
   color: var(--text-black);
 }

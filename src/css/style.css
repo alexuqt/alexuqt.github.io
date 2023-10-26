@@ -3,28 +3,41 @@
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
 :root {
-  --title: 'Zilla Slab';
-  --title: 'Lora';
+  /* fonts */
+  --alex-font: 'Lato';
+  --title: 'Lato';
   --text: 'Lato';
 
-  --primary: #7aa155; /* aquest blau mola #7aa1ff */
+  /* colors */
+  --primary: #668068;
   --secondary: #fff;
-  --accent: #7d55a1;
+  --accent: #956B79;
+  --gw: #CED9CF;
+
+  --black-50: #9fa59f;
+  --black-25: #c0c7c0;
   
   --text-white: var(--secondary);
-  --text-black: #222222;
-  --text-gray: #717171;
+  --text-black: #212621;
+  --text-gray: #6e746e;
 
-  --pad-w: 120px;
+  /* type sclaing */
+  --ts0: 16px;
+  --ts1: 1.333rem;
+  --ts2: 1.777rem;
+  --ts3: 2.369rem;
+
+  --pad-w: 128px;
 }
 
 /* inclou tot: header, primary & footer */
 body {
-  font-family: var(--text), 'Roboto', 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+  font-family: var(--text), 'Roboto', sans-serif;
+  font-size: var(--ts);
   background-color: var(--secondary);
   margin: 0 auto;
   
-  min-height: 100vh;
+  min-height: 101vh;
   display: flex;
   flex-direction: column;
 }
@@ -40,14 +53,18 @@ main {
 }
 
 footer {
-  background-color: var(--primary);
+  background-color: var(--gw);
   margin-top: auto;
-  color: var(--text-white);
+  color: var(--text-black);
   height: 100px;
   display: grid;
   grid-template-columns: repeat(12,minmax(0,1fr));
   padding: 0 var(--pad-w);
   column-gap: 24px;
+}
+
+.footer-div {
+  margin: 20 0;
 }
 
 
@@ -84,7 +101,7 @@ article {
 }
 
 .subhead {
-  font-size: 2.5em;
+  font-size: 3.157rem;
 }
 
 p {
@@ -92,18 +109,27 @@ p {
   word-wrap: break-word;
 }
 
-h1, h2 {
+h1, h2, h3 {
   font-family: var(--title);
-  color: var(--primary);
+}
+
+h1 {
+  font-size: var(--ts3);
+}
+
+h2 {
+  font-size: var(--ts2);
 }
 
 h3 {
-  font-family: var(--title);
+  font-size: var(--ts1);
 }
 
 a {
   text-decoration: none;
   color: var(--primary);
+  padding: 0;
+  margin: 0;
 }
 
 a:hover {

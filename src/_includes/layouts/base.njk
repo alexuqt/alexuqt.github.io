@@ -3,38 +3,35 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ title }}</title>
+  <title>àlex | {{ title }}</title>
   <link rel="stylesheet" href="{{ '/css/style.css' | url }}">
   <link rel="stylesheet" href="{{ '/css/navbar.css' | url }}">
   <link rel="stylesheet" href="{{ '/css/project.css' | url }}">
   <link rel="stylesheet" href="{{ '/css/contact.css' | url }}">
   <link rel="stylesheet" href="{{ '/css/responsive.css' | url }}">
-  <link rel="stylesheet" href="{{ '/css/portfolio.css' | url }}">
   <link rel="stylesheet" href="/css/{{ cssFile }}" />
 </head>
 <body>
   <header>
     <nav>
-      <a href="/home" class="alex">àlex</a>
+      <a href="/" class="alex">àlex</a>
       <ul>
-        <li><a href="/about" class= "nav-a">BLOG</a></li>
-        <li><a href="/projects" class= "nav-a">PROJECTS</a></li>
-        <li><a href="/about" class= "nav-a">ABOUT</a></li>
-        <li><a href="/contact" class= "nav-a">CONTACT</a></li>
+        <li><a href="/about" class= "nav-a">blog</a></li>
+        <li><a href="/projects" class= "nav-a">projects</a></li>
+        <li><a href="/about" class= "nav-a">about</a></li>
+        <li><a href="/contact" class= "nav-a">contact</a></li>
       </ul>
     </nav>
   </header>
   <main>
     <div class="main">
-      <h1>{{ title }}</h1>
-      <article>
-        {{ content | safe }}
-      </article>
+      {{ content | safe }}
     </div>
   </main>
   <footer class="footer">
-    <div>
+    <div class="footer-div">
       <p>&copy; 2023 Alex</p>
+      <p>github</p>
     </div>
   </footer>
 </body>
