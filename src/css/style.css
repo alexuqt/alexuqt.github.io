@@ -53,18 +53,27 @@ main {
 }
 
 footer {
-  background-color: var(--gw);
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--text-black);
   margin-top: auto;
-  color: var(--text-black);
-  height: 100px;
-  display: grid;
-  grid-template-columns: repeat(12,minmax(0,1fr));
+  color: var(--black-25);
   padding: 0 var(--pad-w);
-  column-gap: 24px;
 }
 
 .footer-div {
-  margin: 20 0;
+  margin: 20px 0;
+}
+.footer-div>svg {
+  margin-left: 16px;
+  width: 24px;
+  height: 24px;
+}
+.footer-div>svg>path, .footer-div>svg>circle {
+  fill: var(--black-25);
+}
+.footer-div>svg:hover>path, .footer-div:hover>svg:hover>circle {
+  fill: #fff;
 }
 
 
@@ -100,7 +109,8 @@ article {
   background: var(--accent);
 }
 
-.subhead {
+.hero {
+  padding-top: 256px;
   font-size: 3.157rem;
 }
 
@@ -123,6 +133,7 @@ h2 {
 
 h3 {
   font-size: var(--ts1);
+  font-weight: 400;
 }
 
 a {
