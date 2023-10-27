@@ -11,8 +11,18 @@
 @media only screen and (max-width: 640px) { /* iPhone */
   nav {
     display: inline-block;
-    padding: 12px 12px;
+    padding: 8px 0;
     width: 100%;
+    margin: 0;
+  }
+
+  nav a:not(.alex) {
+    margin: 0;
+    width: 128px;
+  }
+  nav a.alex {
+    margin: 0;
+    margin-bottom: 8px;
   }
 
   .projects {
@@ -25,10 +35,10 @@
 }
 
 @media only screen and (max-width: 448px) { /* extra small */
-  nav li {
-    display: block;
+  nav a:not(.alex) {
+    width: 96px;
   }
-
+  
   .projects {
     grid-template-columns: repeat(1,minmax(0,1fr));
   }
