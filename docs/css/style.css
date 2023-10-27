@@ -14,11 +14,12 @@
   --accent: #956B79;
   --gw: #CED9CF;
 
+  --black-75: #3b3f3b;
   --black-50: #9fa59f;
   --black-25: #c0c7c0;
   
   --text-white: var(--secondary);
-  --text-black: #212621;
+  --black: #212621;
   --text-gray: #6e746e;
 
   /* type sclaing */
@@ -55,7 +56,7 @@ main {
 footer {
   display: flex;
   justify-content: space-between;
-  background-color: var(--text-black);
+  background-color: var(--black);
   margin-top: auto;
   color: var(--black-25);
   padding: 0 var(--pad-w);
@@ -136,6 +137,10 @@ h3 {
   font-weight: 400;
 }
 
+h4 {
+  font-size: var(--ts);
+}
+
 a {
   text-decoration: none;
   color: var(--primary);
@@ -147,8 +152,8 @@ a:hover {
   text-decoration: none;
 }
 
-a:not(.alex):not(.project):not(.nav-a):visited {
-  color: var(--primary);
+a:visited {
+  text-decoration: none;
 }
 
 .left2right { 
@@ -194,4 +199,12 @@ img {
   max-width: 100%;
   height: auto;
   width: auto;
+}
+
+.black-75 {
+  color: var(--black-75)
+}
+
+.black-50 {
+  color: var(--black-50)
 }

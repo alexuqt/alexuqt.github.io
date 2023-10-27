@@ -3,7 +3,15 @@ title: About
 permalink: /about.html
 ---
 
-<h3>Languages</h3>
+<h4>Languages</h4>
+
+<ul>
+  <li>en | English | <span class="black-75">Full professional proficiency.</span></li>
+  <li>es | English | <span class="black-75">Full professional proficiency.</span></li>
+  <li>ca | English | <span class="black-75">Full professional proficiency.</span></li>
+  <li>fr | English | <span class="black-75">Full professional proficiency.</span></li>
+  <li>other languages | <span class="black-75">Full professional proficiency.</span></li>
+</ul>
 
 <div class="contact">
   <p class="contact-title">English</p>

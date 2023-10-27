@@ -9,11 +9,10 @@ nav {
 }
 
 nav a {
-  color: var(--text-black);
+  color: var(--black);
   display: block;
   text-align: center;
   text-decoration: none;
-  font-size: var(--ts);
 }
 nav a:not(.alex) {
   margin-left: 64px;
@@ -47,5 +46,5 @@ nav li {
   font-weight: 700;
   font-size: var(--ts1);
   /*font-family: var(--alex-font);*/
-  color: var(--text-black);
+  color: var(--black);
 }

@@ -19,25 +19,41 @@
   display: flex;
   justify-content: space-between;
 }
-.blog a {
-  color: var(--text-black);
+
+.themes {
+  display: grid;
+  align-items: start; /* pushes items to the top, so that sticky works! */
+  margin-right: 80px;
+}
+.themes a {
+  color: var(--black);
   display: block;
   text-align: center;
   text-decoration: none;
-  border: solid 2px var(--text-black);
   border-radius: 8px;
   padding: 8px 0;
   width: 96px;
   margin: auto 0;
 }
-.blog ul {
+.themes ul {
+  position: sticky;
+  top: 96px;
+  margin-top: 0;
+
   list-style-type: none;
   margin: 0;
   padding: 0;
   text-align: center;
+  width: 100px;
 }
-.blog li {
+.themes li {
   text-decoration: none;
   display: inline-block;
   margin: 8px 0;
+}
+.selected {
+  border: solid 2px var(--black);
+}
+.not-selected {
+  border: solid 2px var(--black-50);
 }
