@@ -118,6 +118,7 @@ article {
 }
 .hero>p{
   font-size: 3.157rem;
+  line-height: normal;
 }
 
 p {

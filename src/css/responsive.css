@@ -8,6 +8,21 @@
   }
 }
 
+@media only screen and (max-width: 1024px) { /* posts */
+  .post {
+    flex-direction: column;
+  }
+
+  .post-text {
+    max-width: 720px;
+  }
+
+  .post-img {
+    margin-top: 64px;
+    margin-left: auto;
+  }
+}
+
 @media only screen and (max-width: 640px) { /* iPhone */
   nav {
     display: inline-block;
