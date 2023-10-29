@@ -57,3 +57,44 @@
 .not-selected {
   border: solid 2px var(--black-50);
 }
+
+
+.post {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.post-text{
+  /*width: 592px;*/
+  flex: 1;
+}
+
+.post-img {
+  display: flex;
+  flex-direction: row;
+}
+.post-img img {
+  width: 216px;
+  margin-bottom: 32px;
+  object-fit: cover;
+}
+.post-img div {
+  margin-left: 32px;
+}
+
+.post-img-left {
+  display: flex;
+  flex-direction: column;
+}
+.post-img-left img {
+  height: 270px;
+}
+
+.post-img-right {
+  display: flex;
+  flex-direction: column;
+}
+.post-img-right img {
+  height: 421px;
+}

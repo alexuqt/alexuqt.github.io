@@ -14,12 +14,12 @@
   --accent: #956B79;
   --gw: #CED9CF;
 
+  --black: #212621;
   --black-75: #3b3f3b;
   --black-50: #9fa59f;
   --black-25: #c0c7c0;
   
   --text-white: var(--secondary);
-  --black: #212621;
   --text-gray: #6e746e;
 
   /* type sclaing */
@@ -35,6 +35,8 @@
 body {
   font-family: var(--text), 'Roboto', sans-serif;
   font-size: var(--ts);
+  line-height: 24px;
+  letter-spacing: 0.01em;
   background-color: var(--secondary);
   margin: 0 auto;
   
@@ -65,6 +67,9 @@ footer {
 .footer-div {
   margin: 20px 0;
 }
+.footer-div>a{
+  color: var(--black-25);
+}
 .footer-div>svg {
   margin-left: 16px;
   width: 24px;
@@ -94,10 +99,8 @@ footer div {
 
 article {
   text-align: left;
-  text-align: justify;
   text-justify: inter-word;
   padding-bottom: 50px;
-  
 }
 
 .main {
@@ -115,10 +118,12 @@ article {
 }
 .hero>p{
   font-size: 3.157rem;
+  line-height: normal;
 }
 
 p {
   margin: 0;
+  margin-bottom: 8px;
   word-wrap: break-word;
 }
 
@@ -128,6 +133,8 @@ h1, h2, h3 {
 
 h1 {
   font-size: var(--ts3);
+  margin-top: 64px;
+  margin-bottom: 32px;
 }
 
 h2 {
@@ -209,4 +216,9 @@ img {
 
 .black-50 {
   color: var(--black-50)
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 360px;
 }

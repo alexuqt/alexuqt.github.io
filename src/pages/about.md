@@ -3,38 +3,50 @@ title: About
 permalink: /about.html
 ---
 
-<h4>Languages</h4>
+<div class="about">
 
-<ul>
-  <li>en | English | <span class="black-75">Full professional proficiency.</span></li>
-  <li>es | English | <span class="black-75">Full professional proficiency.</span></li>
-  <li>ca | English | <span class="black-75">Full professional proficiency.</span></li>
-  <li>fr | English | <span class="black-75">Full professional proficiency.</span></li>
-  <li>other languages | <span class="black-75">Full professional proficiency.</span></li>
-</ul>
+<div>
+  <h4>Languages</h4>
 
-<div class="contact">
-  <p class="contact-title">English</p>
-  <p>Full professional proficiency.</p>
+  <ul>
+    <li>en | English | <span class="black-75">Full professional proficiency.</span></li>
+    <li>es | English | <span class="black-75">Full professional proficiency.</span></li>
+    <li>ca | English | <span class="black-75">Full professional proficiency.</span></li>
+    <li>fr | English | <span class="black-75">Full professional proficiency.</span></li>
+    <li>other languages | <span class="black-75">Full professional proficiency.</span></li>
+  </ul>
+
+
+  <div class="contact">
+    <p class="contact-title">English</p>
+    <p>Full professional proficiency.</p>
+  </div>
+
+  <div class="contact">
+    <p class="contact-title">Spanish</p>
+    <p>Competencia nativa.</p>
+  </div>
+
+  <div class="contact">
+    <p class="contact-title">Catalan</p>
+    <p>Competència nativa.</p>
+  </div>
+
+  <div class="contact">
+    <p class="contact-title">French</p>
+    <p>J'ai obtenu le double-diplôme Batxillerat + Baccalauréat (enseignement qui intègre des éléments du système éducatif français). J'ai vécu en France pendant un sémestre comme étudiant d'échange Erasmus.</p>
+  </div>
+
+  <div class="contact">
+    <p class="contact-title">other languages</p>
+    <p>I am passionate about language learning and have basic proficiency in other languages, although I'm not at a professional level.</p>
+  </div>
+
 </div>
 
-<div class="contact">
-  <p class="contact-title">Spanish</p>
-  <p>Competencia nativa.</p>
+
+
+<div>
+  <img src="/images/hero.png" alt="hero" />
 </div>
-
-<div class="contact">
-  <p class="contact-title">Catalan</p>
-  <p>Competència nativa.</p>
-</div>
-
-<div class="contact">
-  <p class="contact-title">French</p>
-  <p>J'ai obtenu le double-diplôme Batxillerat + Baccalauréat (enseignement qui intègre des éléments du système éducatif français). J'ai vécu en France pendant un sémestre comme étudiant d'échange Erasmus.</p>
-</div>
-
-
-<div class="contact">
-  <p class="contact-title">other languages</p>
-  <p>I am passionate about language learning and have basic proficiency in other languages, although I'm not at a professional level.</p>
 </div>

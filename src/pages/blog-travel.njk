@@ -1,0 +1,32 @@
+---
+title: Travel blog
+permalink: /blog/travel.html
+---
+
+<div class="blog">
+
+  <div class="posts">
+    <section>
+    {% for post in collections.posts | sortByDate %}
+    <a href="{{post.url}}" class="project">
+      <header class="project-header">
+        <img src="/projects/images/drone.jpg" alt="{{project.data.title}}" />
+        <div>{{post.data.tag}}</div>
+        <h3>{{post.data.title}}</h3>
+        <p>{{post.data.date}}</p>
+      </header>
+    </a>
+    {%- endfor %}
+    </section>
+  </div>
+  <div class="themes">
+    <ul>
+      <li><a href="/blog/general" class="not-selected">general</a></li>
+      <li><a href="/blog/travel" class="selected">travel</a></li>
+    </ul>
+  </div>
+
+</div>
+
+
+

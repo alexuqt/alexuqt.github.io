@@ -4,6 +4,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addWatchTarget('./src/css/'); // changes trigger a build
 
   eleventyConfig.addPassthroughCopy('./src/projects/images');
+  eleventyConfig.addPassthroughCopy('./src/images');
+  eleventyConfig.addPassthroughCopy('./src/posts');
 
   eleventyConfig.addFilter("sortByDate", (projects) => projects.sort((a, b) => a.data.date < b.data.date ? 1 : -1));
 
