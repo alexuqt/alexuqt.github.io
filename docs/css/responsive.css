@@ -4,12 +4,12 @@
   }
 
   :root {
-    --pad-w: 50px;
+    --sep-128: 50px;
   }
 }
 
 @media only screen and (max-width: 1024px) { /* posts */
-  .post {
+  .post, .post-taiwan {
     flex-direction: column;
   }
 

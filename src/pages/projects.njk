@@ -3,22 +3,17 @@ title: Projects
 permalink: /projects.html
 ---
 
-<header>
-  <p>Projects page</p>
-  {{ collections.projects | length }}
-</header>
-
 <section class="projects">
-{% for project in collections.projects | sortByDate %}
-<a href="{{project.url}}" class="project">
-  <header class="project-header">
-  <img class="project-image" src="/projects/images/{{project.data.img}}" alt="{{project.data.title}}" />
-  <div class="project-tag">{{project.data.tag}}</div>
-  <h2 class="project-title">{{project.data.title}}</h2>
-  </header>
-  <div class="project-excerpt">
-    <p>Hola aquest és un projecte que parla de moltes coses.</p>
-  </div>
-</a>
-{%- endfor %}
+  {% for project in collections.projects | sortByDate %}
+  <a href="{{project.url}}" class="project">
+    <header class="project-header">
+    <img class="project-image" src="/projects/images/{{project.data.img}}" alt="{{project.data.title}}" />
+    <div class="project-tag">{{project.data.tag}}</div>
+    <h2 class="project-title">{{project.data.title}}</h2>
+    </header>
+    <div class="project-excerpt">
+      <p>Hola aquest és un projecte que parla de moltes coses.</p>
+    </div>
+  </a>
+  {%- endfor %}
 </section>
