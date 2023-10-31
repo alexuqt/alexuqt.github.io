@@ -2,7 +2,6 @@
   display: grid;
   grid-template-columns: repeat(4,minmax(0,1fr));
   grid-gap: 40px;
-  padding: 0 var(--sep-128);
 }
 
 .project { /* a */

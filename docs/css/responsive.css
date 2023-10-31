@@ -4,26 +4,42 @@
   }
 
   :root {
-    --sep-128: 50px;
+    --sep-128: 32px;
   }
 }
 
 @media only screen and (max-width: 1024px) { /* posts */
   .post, .post-taiwan {
     flex-direction: column;
+    padding-left: 32px;
   }
 
   .post-text {
     max-width: 720px;
+    padding-left: calc(var(--sep-128)-32px)
   }
 
   .post-img {
     margin-top: 64px;
     margin-left: auto;
   }
+
+  .post-img-left {
+    margin-left: 0;
+  }
 }
 
 @media only screen and (max-width: 640px) { /* iPhone */
+  :root {
+    /* type sclaing */
+    --ts1: 1.2rem;
+    --ts2: 1.44rem;
+    --ts3: 1.728rem;
+    --ts4: 2.074rem;
+    
+    --sep-256: 128px;
+  }
+  
   nav {
     display: inline-block;
     padding: 8px 0;
@@ -44,9 +60,6 @@
     grid-template-columns: repeat(2,minmax(0,1fr));
   }
 
-  body {
-    font-size: 1.2em;
-  }
 }
 
 @media only screen and (max-width: 448px) { /* extra small */

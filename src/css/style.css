@@ -27,6 +27,7 @@
   --ts1: 1.333rem;
   --ts2: 1.777rem;
   --ts3: 2.369rem;
+  --ts4: 3.157rem;
 
   /* paddings and margins */
   --sep-128: 128px;
@@ -42,7 +43,6 @@ body {
   background-color: var(--secondary);
   margin: 0 auto;
   
-  min-height: 101vh;
   display: flex;
   flex-direction: column;
 }
@@ -92,9 +92,11 @@ header button {
 main {
   width: 100%;
   margin: 0 auto;
+  min-height: 101vh;
 }
-main>div>h1 {
-  padding: 0 var(--sep-128);
+main>h1, main>div:not(.post-taiwan), main>section {
+  padding-right: var(--sep-128);
+  padding-left: var(--sep-128);
 }
 
 footer {
@@ -122,16 +124,6 @@ article {
 ::selection {
   color: var(--secondary);
   background: var(--accent);
-}
-
-.hero {
-  padding: 0 var(--sep-128);
-  padding-top: var(--sep-256);
-  padding-bottom: var(--sep-256);
-}
-.hero>p{
-  font-size: 3.157rem;
-  line-height: normal;
 }
 
 p {
@@ -211,5 +203,4 @@ img {
 .about {
   display: grid;
   grid-template-columns: 1fr 360px;
-  padding: 0 var(--sep-128);
 }

@@ -18,7 +18,6 @@
 .blog {
   display: flex;
   justify-content: space-between;
-  padding: 0 var(--sep-128);
 }
 
 .themes {
@@ -64,7 +63,6 @@
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  padding: 0 var(--sep-128);
 }
 .post-taiwan {
   display: flex;
