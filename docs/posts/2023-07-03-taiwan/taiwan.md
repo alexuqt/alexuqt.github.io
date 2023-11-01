@@ -1,6 +1,5 @@
 ---
 title: Taiwan
-img: ./project-one.png
 date: 2023-07-03
 ---
 

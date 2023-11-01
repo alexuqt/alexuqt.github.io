@@ -1,0 +1,9 @@
+.about {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+}
+
+.experience>div>h3 {
+  padding: 8px 0 6px 0;
+  border-bottom: 2px solid var(--black);
+}

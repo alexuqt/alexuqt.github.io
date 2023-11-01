@@ -1,10 +1,6 @@
 @media only screen and (max-width: 1280px) { /* iPad */
-  .projects {
-    grid-template-columns: repeat(3,minmax(0,1fr));
-  }
-
   :root {
-    --sep-128: 32px;
+    --sep-128: 64px;
   }
 }
 
@@ -37,9 +33,10 @@
     --ts3: 1.728rem;
     --ts4: 2.074rem;
     
+    --sep-128: 32px;
     --sep-256: 128px;
   }
-  
+
   nav {
     display: inline-block;
     padding: 8px 0;
@@ -56,8 +53,9 @@
     margin-bottom: 8px;
   }
 
-  .projects {
-    grid-template-columns: repeat(2,minmax(0,1fr));
+  .about {
+    grid-template-columns: 1fr 10px;
+    
   }
 
 }
@@ -65,9 +63,5 @@
 @media only screen and (max-width: 448px) { /* extra small */
   nav a:not(.alex) {
     width: 96px;
-  }
-  
-  .projects {
-    grid-template-columns: repeat(1,minmax(0,1fr));
   }
 }
