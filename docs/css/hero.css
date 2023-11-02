@@ -7,26 +7,35 @@ hero {
   justify-content: flex-start;
   align-items: initial;
   min-height: 100vh;
-  padding-left: var(--sep-128);
+  margin-left: var(--sep-128);
 }
 hero>p {
   padding-top: 8px;
+}
+hero>div {
+  height: calc(100vh - 168px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 96px;
 }
 hero h3 {
   font-weight: 400;
 }
 
 .hero {
-  max-width: 360px;
-  margin: auto var(--sep-128) auto 0;
+  margin-top: 0;
+  margin-right: var(--sep-128);
 }
 .hero>p{
   font-size: var(--ts4);
   line-height: normal;
+  color: var(--black);
 }
 
 .menu {
-  margin-bottom: auto;
+  bottom: 0;
+  margin-bottom: calc(8*var(--pad-8));
   margin-top: 0px;
 }
 .menu h3 {
@@ -60,19 +69,18 @@ hero h3 {
   width: calc(100% - var(--pad-8));
   padding-left: var(--pad-8);
   color: var(--primary);
+  font-weight: bold;
   transition: var(--transition);
 }
 
-@media only screen and (min-width: 640px) { /* iPhone */
-  .hero {
-    max-width: 480px;
+@media only screen and (min-width: 641px) { /* iPhone */
+  hero>div {
+    justify-content: flex-start;
   }
   
   .menu{
-  margin-bottom: 256px;
-    min-width: 480px;
-    width: 50vw;
+    margin-top: 96px;
     margin-right: 0;
-    margin-left: auto;
+    margin-left: 0;
   }
 }

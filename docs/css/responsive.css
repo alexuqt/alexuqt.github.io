@@ -1,10 +1,12 @@
 @media only screen and (max-width: 1280px) { /* iPad */
-  :root {
-    --sep-128: 64px;
-  }
+
 }
 
 @media only screen and (max-width: 1024px) { /* posts */
+  :root {
+    --sep-128: 64px;
+  }
+  
   .post, .post-taiwan {
     flex-direction: column;
     padding-left: 32px;
@@ -52,12 +54,6 @@
     margin: 0;
     margin-bottom: 8px;
   }
-
-  .about {
-    grid-template-columns: 1fr 10px;
-    
-  }
-
 }
 
 @media only screen and (max-width: 448px) { /* extra small */

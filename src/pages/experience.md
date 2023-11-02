@@ -8,6 +8,13 @@ permalink: /experience.html
 
 
 <div>
+
+  <h3>Education</h3>
+  <p>MCUT</p>
+  <p>INSA</p>
+  <p>DT UPC</p>
+  <p>2017-2019 | Double Bac</p>
+
   <h3>Languages</h3>
 
   <ul>
