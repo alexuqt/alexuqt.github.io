@@ -6,15 +6,14 @@ permalink: /about.html
 <div class="about">
 
   <div class="about-pic">
-    <img src="/images/hero.png" alt="about" />
+    <img src="/images/dtt-bw.jpg" alt="about"/>
   </div>
 
   <div class="experience">
-    <p>"About," typically provides a narrative about you, your background, interests, and career goals. It's a place to tell your story and provide a more personal touch. "About" is more about storytelling and personal information</p>
-    <div>
-      <h3>Abroad</h3>
-      <p>I have been selected for a 10-day Summer Camp in <a href="/posts/2023-07-03-taiwan/taiwan/">Taiwan</a>.</p>
-    </div>
+    <p>Àlex holds engineering degrees in both Aerospace and Network Engineering. He currently works as a consultant specializing in cyber risks, enabling clients to elevate their strategies and drive transformation.</p>
+    <p>He is focused on developing his skills and gaining diverse experiences to navigate the evolving technology landscape.</p>
+    <p>Outside of work, he enjoys reading across various genres, learning languages, and exploring new technologies.</p>
+
   </div>
   
 </div>

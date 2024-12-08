@@ -7,6 +7,9 @@
   max-width: calc(100vw - 2*var(--sep-128));
   margin-left: 0;
 }
+.about-pic>img {
+  border-radius: 16px;
+}
 
 .experience>div>h3 {
   padding: 8px 0 6px 0;
