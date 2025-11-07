@@ -1,2 +1,2 @@
 # personal
-[link](alexuqt.github.io)
+[link](https://alexuqt.github.io)
